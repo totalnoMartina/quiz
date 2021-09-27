@@ -81,6 +81,7 @@ function greeting() {
     quizArea.style.display = 'block';
     getName.innerHTML = '';
     getName.innerHTML = 'Hello ' + userName.value + ' thanks for coming by!';
+    question.innerHTML = questionArray[arrayIteration]
     answerA.innerHTML = answerArrayA[arrayIteration];
     answerB.innerHTML = answerArrayB[arrayIteration];
     answerC.innerHTML = answerArrayC[arrayIteration];
@@ -161,9 +162,7 @@ function submitAnswer4() {
         score += 1;
     }
     arrayIteration += 1;
-    submitThird.style.display = 'none';
-    submitFourth.style.display = 'block';
-    quizArea.style.display = 'block';
-    reset()
+    getName.innerHTML = 'Your score is ' + score;
+    quizArea.style.display = 'none';
     
 }
