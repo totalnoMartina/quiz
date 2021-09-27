@@ -19,43 +19,41 @@ let score = 0;
 let arrayIteration = 0;
 
 
+
 let questionArray = [
     "Q1 : What benefits do you get in eating half avocado a day?",
-    "Q2 : orange give calcium?",
-    "Q3 : chickpeas benefit?",
-    "Q4 : Bean for beings :) ? "
+    "Q2 : Which vegetable you can only eat raw, never cooked?",
+    "Q3 : Which vegetable was considered an aphrodisiac back in the Roman times?",
+    "Q4 : Which one of these is not true?"
  ]
 
  let answerArrayA = [
     'All of the above',
-    'Keeps eyes healthy due to high vitamin E',
-    'Helps in weigh-loss',
-    'Helps manage cholesterol'
-
+    'Tomato',
+    'Chickpeas',
+    'Tomatoes are in France refered to as "The apple of love".'
  ]
 
  let answerArrayB = [
-    'All of the above',
-    'Keeps eyes healthy due to high vitamin E',
-    'Helps in weigh-loss',
-    'Helps manage cholesterol'
+    'Keeps eyes healthy due to high amount of vitamin E',
+    'Cucumber',
+    'Broccolli',
+    'Carrots are made up of 85%-90% water.'
  ]
 
  let answerArrayC = [
-    'C answer a',
-    'C answer b',
-    'C answer c',
-    'C answer d'
+    'Aids weigh-loss',
+    'Kale',
+    'Beetroot',
+    'Germans eat twice as much potatoes as Americans.'
  ]
 
  let answerArrayD = [
-    'D answer a',
-    'D answer b',
-    'D answer b',
-    'D answer b'
+    'Helps manage cholesterol',
+    'Carrot',
+    'Potato',
+    'The first documented carrot was orange in color'
  ]
-
-
 
 quizArea.style.display = 'none';
 submitFirst.style.display = 'none';
@@ -81,11 +79,7 @@ function greeting() {
     quizArea.style.display = 'block';
     getName.innerHTML = '';
     getName.innerHTML = 'Hello ' + userName.value + ' thanks for coming by!';
-    question.innerHTML = questionArray[arrayIteration]
-    answerA.innerHTML = answerArrayA[arrayIteration];
-    answerB.innerHTML = answerArrayB[arrayIteration];
-    answerC.innerHTML = answerArrayC[arrayIteration];
-    answerD.innerHTML = answerArrayD[arrayIteration];
+    reset()
     submitFirst.style.display = 'block';
     
 };

@@ -1,7 +1,14 @@
 
 body {
+    font-size: 18px;
     text-align: center;
     background-color: #254d32;
     color: white;
     padding: 3px;
+}
+
+#answerA:hover, #answerB:hover, #answerC:hover, #answerD:hover,
+#first-q-submit:hover, #second-q-submit:hover, #third-q-submit:hover,
+#fourth-q-submit:hover {
+    background-color: darkgoldenrod;
 }
