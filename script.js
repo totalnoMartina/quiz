@@ -105,7 +105,7 @@ function respondB() {
     answerB.style.color = "red";
     answerC.style.color = "white";
     answerD.style.color = "white";
-    correctAnswer = "AnswerB";
+    correctAnswer = "answerB";
 }
 
 function respondC() {
@@ -162,7 +162,7 @@ function submitAnswer4() {
         score += 1;
     }
     arrayIteration += 1;
-    getName.innerHTML = 'Your score is ' + score;
+    getName.innerHTML = 'Well done! ' + userName.value + ' Your score is ' + score;
     quizArea.style.display = 'none';
     
 }
